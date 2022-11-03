@@ -1,12 +1,17 @@
 import { Box } from './Box';
 import { AppBar } from './AppBar';
 import { Outlet } from 'react-router-dom';
+import { Suspense } from 'react';
 
-export const Layout = () => {
+const Layout = () => {
   return (
     <Box display="grid" gridTemplateColumns="200px 1fr">
       <AppBar />
-      <Outlet />
+      <Suspense fallback={null}>
+        <Outlet />
+      </Suspense>
     </Box>
   );
 };
+
+export default Layout;

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getInvoiceById } from './../fakeApi';
 import { Box } from './Box';
 
-export const InvoiceDetails = () => {
+const InvoiceDetails = () => {
   const { invoiceId } = useParams();
   const [invoice, setInvoice] = useState(null);
 
@@ -18,7 +18,7 @@ export const InvoiceDetails = () => {
   const { recipient, account, total, date } = invoice;
 
   return (
-    <Box p={5}>
+    <Box as="div" p={5}>
       <Box as="ul">
         <li>
           <b>Recipient:</b> {recipient}
@@ -39,3 +39,5 @@ export const InvoiceDetails = () => {
     </Box>
   );
 };
+
+export default InvoiceDetails;

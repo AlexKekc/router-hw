@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-export const NavItem = styled(NavLink)`
+export const CustomersItem = styled(Link)`
   display: flex;
   align-items: center;
-  padding: ${p => p.theme.space[2]}px;
+  padding: ${p => p.theme.space[3]}px;
   border-radius: 6px;
   text-decoration: none;
   color: ${p => p.theme.colors.text};

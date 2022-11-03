@@ -4,7 +4,7 @@ import { getInvoices } from './../fakeApi';
 import { NavItem } from './Invoices.styled';
 import { Outlet } from 'react-router-dom';
 
-export const Invoices = () => {
+const Invoices = () => {
   const [invoices, setInvoices] = useState([]);
 
   useEffect(() => {
@@ -24,3 +24,5 @@ export const Invoices = () => {
     </Box>
   );
 };
+
+export default Invoices;

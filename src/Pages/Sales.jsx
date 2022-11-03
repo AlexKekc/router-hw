@@ -1,3 +1,5 @@
+import { Suspense } from 'react';
+
 import { Outlet } from 'react-router-dom';
 import { NavItem } from './Sales.styled';
 import { Box } from 'components/Box';
@@ -8,7 +10,7 @@ const navItems = [
   { href: 'deposits', text: 'Deposits' },
 ];
 
-export const Sales = () => {
+const Sales = () => {
   return (
     <Box as="main" dispaly="flex" flexDirection="column">
       <Box as="header" borderBottom="3px solid black" p={4}>
@@ -20,7 +22,11 @@ export const Sales = () => {
           ))}
         </Box>
       </Box>
-      <Outlet />
+      <Suspense fallback={null}>
+        <Outlet />
+      </Suspense>
     </Box>
   );
 };
+
+export default Sales;
