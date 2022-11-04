@@ -4,7 +4,7 @@ import { GlobalStyle } from './GlobalStyle';
 import Layout from './Layout';
 import InvoiceDetails from './InvoiceDetails';
 
-const Sales = lazy(() => import('../pages/'));
+const Sales = lazy(() => import('../pages/Sales'));
 const Customers = lazy(() => import('../pages/Customers'));
 const CustomerDetails = lazy(() => import('../pages/CustomerDetails'));
 const Invoices = lazy(() => import('./Invoices'));
