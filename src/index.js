@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { theme } from './theme';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode basename="/router-hw/">
-    <BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter basename="/router-hw/">
       <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
