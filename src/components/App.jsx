@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { GlobalStyle } from './GlobalStyle';
 import Layout from './Layout';
 import InvoiceDetails from './InvoiceDetails';
+import Sales from '../pages/Sales';
 
 // const Sales = lazy(() => import('../pages/Sales'));
 const Customers = lazy(() => import('../pages/Customers'));
