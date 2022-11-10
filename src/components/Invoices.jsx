@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { Box } from './Box';
 import { getInvoices } from './../fakeApi';
 import { NavItem } from './Invoices.styled';
-import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
 
 const Invoices = () => {
   const [invoices, setInvoices] = useState([]);
