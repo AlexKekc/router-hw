@@ -1,7 +1,7 @@
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getCustomerById } from 'fakeApi';
-import { Box } from './../components/Box';
+import { Box } from '../components/Box';
 
 const CustomerDetails = () => {
   const { customerId } = useParams();

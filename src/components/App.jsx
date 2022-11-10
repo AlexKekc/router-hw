@@ -4,9 +4,9 @@ import { GlobalStyle } from './GlobalStyle';
 import Layout from './Layout';
 import InvoiceDetails from './InvoiceDetails';
 
-const Sales = lazy(() => import('../pages/Sales'));
-const Customers = lazy(() => import('../pages/Customers'));
-const CustomerDetails = lazy(() => import('../pages/CustomerDetails'));
+const Sales = lazy(() => import('../Pages/Sales'));
+const Customers = lazy(() => import('../Pages/Customers'));
+const CustomerDetails = lazy(() => import('../Pages/CustomerDetails'));
 const Invoices = lazy(() => import('./Invoices'));
 
 export const App = () => {

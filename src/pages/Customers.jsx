@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { getCustomers } from '../fakeApi';
 import { SearchBox } from '../components/SearchBox';
 import { useSearchParams } from 'react-router-dom';
-import { Box } from './../components/Box';
+import { Box } from '../components/Box';
 import { CustomersItem } from './Customers.styled';
 
 const Customers = () => {
