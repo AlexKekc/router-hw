@@ -3,6 +3,7 @@ import { Box } from './Box';
 import { getInvoices } from './../fakeApi';
 import { NavItem } from './Invoices.styled';
 import { Outlet } from 'react-router-dom';
+import { Suspense } from 'react';
 
 const Invoices = () => {
   const [invoices, setInvoices] = useState([]);
@@ -20,7 +21,9 @@ const Invoices = () => {
           </NavItem>
         ))}
       </Box>
-      <Outlet />
+      <Suspense>
+        <Outlet />
+      </Suspense>
     </Box>
   );
 };

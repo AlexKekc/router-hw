@@ -1,8 +1,7 @@
-import { Suspense } from 'react';
-
-import { Outlet } from 'react-router-dom';
 import { NavItem } from './Sales.styled';
 import { Box } from 'components/Box';
+import { Outlet } from 'react-router-dom';
+import { Suspense } from 'react';
 
 const navItems = [
   { href: 'analytics', text: 'Analytics' },
