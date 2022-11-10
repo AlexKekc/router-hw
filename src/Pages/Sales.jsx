@@ -1,4 +1,4 @@
-// import { Suspense } from 'react';
+import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { NavItem } from './Sales.styled';
 import { Box } from 'components/Box';
@@ -21,7 +21,9 @@ const Sales = () => {
           ))}
         </Box>
       </Box>
-      <Outlet />
+      <Suspense fallback={null}>
+        <Outlet />
+      </Suspense>
     </Box>
   );
 };
